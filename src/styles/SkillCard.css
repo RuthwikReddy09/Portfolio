@@ -1,0 +1,24 @@
+
+.skill-card{
+    outline: 1px solid white;
+    width: 160px;
+    height: 50px;
+    margin: 10px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+    gap: 10px;
+    font-weight: 600;
+    font-size:medium;
+    transition: 0.2s all ease;
+}
+
+.skill-image{
+    width: 30px;
+    height: 30px;
+}
+.skill-card:hover{
+    transform: scale(0.85);
+    
+}

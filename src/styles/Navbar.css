@@ -1,0 +1,37 @@
+
+.navbar-container{
+    position:sticky;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.navbar{
+
+    width: 60%;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
