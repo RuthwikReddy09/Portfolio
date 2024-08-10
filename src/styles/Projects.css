@@ -1,7 +1,7 @@
 .projects {
     width: 100%;
-    min-height: 100vh;
-    outline: 1px solid white;
+    min-height: 120vh;
+    /* outline: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -35,11 +35,16 @@
 .project-card{
     width: 500px;
     height: 200px;
-    outline: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: var(--background);
     box-shadow: 5px 5px rgb(245, 245, 245);
     border-radius: 5px;
     line-height: 40px;
     transition: 0.3s all ease;
+    /* pop up animation  */
+    /* animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%; */
 }
 .project-card:hover{
     transform: scale(1.05);

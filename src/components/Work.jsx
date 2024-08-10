@@ -2,14 +2,15 @@ import React from "react";
 import "../styles/Work.css";
 const Work = () => {
   return (
-    <div className="work">
+    <>
+    <div className="work" id="work">
       <div className="work-heading">&lt;Work/&gt;</div>
 
       <div className="work-content">
         <div className="work-card">
           <div className="company-details">
             <div className="company-name">
-                <img src="\public\Edgeforce_logo1.png" className="work-image"/>
+                <img src="Edgeforce_logo1.png" className="work-image"/>
                  EdgeForce Solutions</div>
             <div className="company-tenure">Jan 2024 - Apr 2024</div>
           </div>
@@ -30,6 +31,9 @@ const Work = () => {
         </div>
       </div>
     </div>
+    <hr className="line"/>
+
+    </>
   );
 };
 

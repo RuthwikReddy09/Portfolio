@@ -1,6 +1,7 @@
 
 .skill-card{
-    outline: 1px solid white;
+    border: 1px solid white;
+    background-color: var(--background);
     width: 160px;
     height: 50px;
     margin: 10px;
@@ -19,6 +20,6 @@
     height: 30px;
 }
 .skill-card:hover{
-    transform: scale(0.85);
+    transform: scale(0.9);
     
 }

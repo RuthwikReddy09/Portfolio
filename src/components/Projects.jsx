@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/Projects.css"
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id="projects">
         <div className="projects-heading">
 
         &lt;Projects/&gt;
