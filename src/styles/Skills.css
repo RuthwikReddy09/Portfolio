@@ -63,7 +63,16 @@
     font-size: 250px;
     opacity: 0.2;
     left: -30px;
-    top:2000px;
+    top:1700px;
+    z-index: -1;
+
+}
+.decoration4{
+    position: absolute;
+    font-size: 250px;
+    opacity: 0.2;
+    right: -60px;
+    top:2300px;
     z-index: -1;
 
 }

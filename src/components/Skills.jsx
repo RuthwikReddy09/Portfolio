@@ -20,6 +20,11 @@ const Skills = () => {
             icon="js.svg"
             color="rgb(202, 166, 247)"
             />
+          {/* <SkillCard
+            name="SQL"
+            icon="js.svg"
+            color="rgb(202, 166, 247)"
+            /> */}
         </div>
         <div className="skills-cards">
           <SkillCard name="ReactJS" icon="react.svg" color="red" />
@@ -27,17 +32,18 @@ const Skills = () => {
           <SkillCard name="CSS" icon="css.svg" color="red" />
         </div>
         <div className="skills-cards">
-          <SkillCard name="Tensorflow" icon="tensorflow.svg" color="white" />
-          <SkillCard name="HuggingFace" icon="huggingface.svg" color="white" />
+          <SkillCard name="MySQL" icon="sql1.svg" color="green" />
+          <SkillCard name="Git" icon="git.svg" color="green" />
         </div>
         <div className="skills-cards">
-          <SkillCard name="Git" icon="git.svg" color="green" />
-          {/* <SkillCard name="Bash" icon="#" color="green"/> */}
+          <SkillCard name="Tensorflow" icon="tensorflow.svg" color="white" />
+          <SkillCard name="HuggingFace" icon="huggingface.svg" color="white" />
         </div>
 
         <div className="decoration1">&lt;&gt;</div>
         <div className="decoration2">&#123;&#125;</div>
         <div className="decoration3">#</div>
+        <div className="decoration4">&lt;&gt;</div>
       </div>
     </div>
     <hr className="line"/>

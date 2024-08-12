@@ -13,7 +13,7 @@ const IdCard = () => {
 
         <div class="thefront">
 
-          <img src="myprofile.jpg" className='profile' />
+          <img src="profile1.jpg" className='profile' />
 
         </div>
 
@@ -21,9 +21,9 @@ const IdCard = () => {
             <h1 className="name">Ruthwik Reddy Doodipala</h1>
             <div className="my-info">
 
-            <h4 className='card-details'>Location: Memphis,Tennessee</h4>
-            <h4 className='card-details'>Uni: University of Memphis</h4>
             <h4 className='card-details'>Major: Masters in CS</h4>
+            <h4 className='card-details'>Uni: University of Memphis</h4>
+            <h4 className='card-details'>Location: Memphis,Tennessee</h4>
             </div>
 
             <div className="card-links">

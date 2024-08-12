@@ -11,11 +11,11 @@ const Home = () => {
 
         <div className="home-main">
           <h1 className="myname">Ruthwik.</h1>
-          <h4 className="role">Developer.</h4>
-          <h4 className="role">ML Engineer.</h4>
+          <h4 className="role">&gt; Developer.</h4>
+          <h4 className="role">&gt; ML Engineer.</h4>
         </div>
         <div className="home-sub">
-          Hey, I'm Ruthwik. I'm a 21 year old developer and ML Engineer based in
+          Hi, I'm Ruthwik. I'm a 21 year old developer and ML Engineer based in
           India, currently living in the US. I've been coding since 2021 and
           currently pursuing masters in CS at the University of Memphis.
         </div>

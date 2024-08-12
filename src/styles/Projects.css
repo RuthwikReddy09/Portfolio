@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     /* outline: 1px solid rgb(255, 255, 255); */
 }
 
@@ -41,12 +41,91 @@
     border-radius: 5px;
     line-height: 40px;
     transition: 0.3s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* pop up animation  */
-    /* animation: appear linear;
+    animation: appear ease  ;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%; */
+    animation-range: entry 0% cover 20%;
 }
 .project-card:hover{
     transform: scale(1.05);
     
+}
+
+.project-container{
+    width: 90%;
+    height: 100%;
+    
+
+}
+
+.project-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px; */
+    border-bottom: 1px solid white;
+}
+.project-name{
+font-weight: 600;
+font-size: large;
+
+}
+.project-links{
+    color: white;
+    margin-top: 10px;
+}
+.project-links>a{
+    color: var(--text);
+    transition: 0.2s all ease-in;
+}
+.project-main{
+    font-size:13px ;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.tags{
+    margin: 3px;
+    padding: 5px 10px ;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.reactjs{
+    background-color: rgb(55, 127, 228);
+    box-shadow: 0 0 10px rgb(55, 127, 228);
+
+
+}
+.sass{
+    
+    background-color: rgb(228, 55, 113);
+    box-shadow: 0 0 10px rgb(228, 55, 113);
+
+}
+.ml{
+    
+    background-color: rgb(228, 147, 55);
+    box-shadow: 0 0 10px rgb(228, 147, 55);
+
+}
+.nlp{
+    
+    background-color: rgb(30, 165, 37);
+    box-shadow: 0 0 10px rgb(30, 165, 37);
+
+}
+.flask{
+    
+    background-color: rgb(29, 134, 138);
+    box-shadow: 0 0 10px rgb(29, 134, 138);
+
+}
+
+.dl{
+    background-color: rgb(30, 165, 37);
+    box-shadow: 0 0 10px rgb(30, 165, 37);
+
 }
