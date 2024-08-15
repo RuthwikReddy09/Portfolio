@@ -16,15 +16,11 @@ const Skills = () => {
             />
           <SkillCard name="C++" icon="c.svg" color="rgb(202, 166, 247)" />
           <SkillCard
-            name="Javascript"
+            name="JavaScript"
             icon="js.svg"
             color="rgb(202, 166, 247)"
             />
-          {/* <SkillCard
-            name="SQL"
-            icon="js.svg"
-            color="rgb(202, 166, 247)"
-            /> */}
+    
         </div>
         <div className="skills-cards">
           <SkillCard name="ReactJS" icon="react.svg" color="red" />
