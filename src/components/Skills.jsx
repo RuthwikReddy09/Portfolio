@@ -32,18 +32,19 @@ const Skills = () => {
           <SkillCard name="CSS" icon="css.svg" color="red" />
         </div>
         <div className="skills-cards">
-          <SkillCard name="MySQL" icon="sql1.svg" color="green" />
           <SkillCard name="Git" icon="git.svg" color="green" />
+          <SkillCard name="MySQL" icon="sql1.svg" color="green" />
+          <SkillCard name="PostgreSQL" icon="postgresql.svg" color="green" />
         </div>
         <div className="skills-cards">
-          <SkillCard name="Tensorflow" icon="tensorflow.svg" color="white" />
-          <SkillCard name="HuggingFace" icon="huggingface.svg" color="white" />
+          <SkillCard name="Tensorflow" icon="tensorflow.svg" color="rgb(55, 127, 228)" />
+          <SkillCard name="HuggingFace" icon="huggingface.svg" color="rgb(55, 127, 228)" />
         </div>
 
         <div className="decoration1">&lt;&gt;</div>
         <div className="decoration2">&#123;&#125;</div>
         <div className="decoration3">#</div>
-        <div className="decoration4">&lt;&gt;</div>
+        {/* <div className="decoration4">&lt;&gt;</div> */}
       </div>
     </div>
     <hr className="line"/>

@@ -15,7 +15,7 @@ const Projects = () => {
               <div className="project-links">
                 <a
                   target="_blank"
-                  href="https://github.com/RuthwikReddy09"
+                  href="https://github.com/RuthwikReddy09/CineMagicV2-React"
                   className="github"
                 >
                   <FaGithub size={25} />
@@ -45,7 +45,7 @@ const Projects = () => {
                 Real-Time Emotion Recognition System{" "}
               </div>
               <div className="project-links">
-                <a target="_blank" href="https://github.com/RuthwikReddy09">
+                <a target="_blank" href="https://github.com/RuthwikReddy09/Stress-Detection-Frontend">
                   <FaGithub size={25} />
                 </a>
               </div>
@@ -70,7 +70,7 @@ const Projects = () => {
             <div className="project-header">
               <div className="project-name">Plagiarism Checker using NLP</div>
               <div className="project-links">
-                <a target="_blank" href="https://github.com/RuthwikReddy09">
+                <a target="_blank" href="https://github.com/RuthwikReddy09/Plagiarism-Checker">
                   <FaGithub size={25} />
                 </a>
               </div>
@@ -95,7 +95,7 @@ const Projects = () => {
             <div className="project-header">
               <div className="project-name">Hurricane Damage Detection</div>
               <div className="project-links">
-                <a target="_blank" href="https://github.com/RuthwikReddy09">
+                <a target="_blank" href="https://github.com/RuthwikReddy09/Hurricane-Damage-Detection">
                   <FaGithub size={25} />
                 </a>
               </div>
