@@ -13,7 +13,7 @@ const IdCard = () => {
 
         <div class="thefront">
 
-          <img src="profile1.jpg" className='profile' />
+          <img src="profile.jpg" className='profile' />
 
         </div>
 
