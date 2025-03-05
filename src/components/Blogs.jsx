@@ -32,7 +32,7 @@ const Blogs = () => {
                   </p>
                   <br />
                   <p className='image-container'>
-                   <img src="public/langchain1.png" alt="Error" />
+                   <img src="langchain1.png" alt="Error" />
                   </p>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const Blogs = () => {
                   </p>
                   <br />
                   <p className='image-container'>
-                    <img src="public/summarizer.png" alt="Error" />
+                    <img src="summarizer.png" alt="Error" />
                   </p>
                 </div>
               </div>
