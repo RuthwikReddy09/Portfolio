@@ -40,7 +40,8 @@ const Skills = () => {
         <div className="decoration1">&lt;&gt;</div>
         <div className="decoration2">&#123;&#125;</div>
         <div className="decoration3">#</div>
-        {/* <div className="decoration4">&lt;&gt;</div> */}
+        <div className="decoration4">&lt;&gt;</div>
+        <div className="decoration5">&lt;%end%&gt;</div>
       </div>
     </div>
     <hr className="line"/>

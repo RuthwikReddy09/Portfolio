@@ -72,7 +72,16 @@
     font-size: 250px;
     opacity: 0.2;
     right: -60px;
-    top:2300px;
+    top:2800px;
+    z-index: -1;
+
+}
+.decoration5{
+    position: absolute;
+    font-size: 100px;
+    opacity: 0.2;
+    left: -10px;
+    top:3900px;
     z-index: -1;
 
 }

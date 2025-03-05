@@ -6,6 +6,7 @@ import Work from './components/Work'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import ScrollButton from './components/ScrollButton'
+import Blogs from './components/Blogs'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Skills/>
       <Work/>
       <Projects/>
+      <Blogs/>
       <Footer/>
     </>
   )

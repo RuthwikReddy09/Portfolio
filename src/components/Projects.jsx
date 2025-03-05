@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 
 const Projects = () => {
   return (
+    <>
     <div className="projects" id="projects">
       <div className="projects-heading">&lt;Projects/&gt;</div>
 
@@ -115,6 +116,8 @@ const Projects = () => {
         </div>
       </div>
     </div>
+      <hr className="line"/>
+      </>
   );
 };
 
