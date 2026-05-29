@@ -1,0 +1,224 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="h-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030f1c"/>
+      <stop offset="100%" stop-color="#071525"/>
+    </linearGradient>
+    <linearGradient id="h-bar1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="h-bar2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="h-bar3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="h-bar4" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="h-bar5" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="h-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="h-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="h-softglow">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#h-bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#38bdf8" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Ambient glow -->
+  <ellipse cx="400" cy="300" rx="300" ry="120" fill="#0369a1" opacity="0.05" filter="url(#h-softglow)"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="25" width="740" height="45" rx="10" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- Cross icon -->
+  <rect x="48" y="36" width="16" height="4" rx="2" fill="#38bdf8"/>
+  <rect x="54" y="30" width="4" height="16" rx="2" fill="#38bdf8"/>
+  <text x="76" y="50" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#e0f2fe">Hospital Resource Utilization Dashboard</text>
+  <!-- Live badge -->
+  <circle cx="710" cy="47" r="5" fill="#10b981"/>
+  <circle cx="710" cy="47" r="5" fill="#10b981" opacity="0.4" filter="url(#h-glow)"/>
+  <text x="722" y="51" font-family="monospace" font-size="9" fill="#34d399">LIVE</text>
+
+  <!-- KPI Cards row -->
+  <!-- Card 1: Bed Occupancy -->
+  <rect x="30" y="85" width="163" height="75" rx="10" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="45" y="105" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">Bed Occupancy</text>
+  <text x="45" y="130" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#38bdf8">84%</text>
+  <text x="45" y="148" font-family="monospace" font-size="9" fill="#10b981">↑ 3.2%</text>
+  <!-- Sparkline -->
+  <polyline points="115,145 125,138 135,141 145,132 155,128 165,130 175,124 182,120" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Card 2: ALOS -->
+  <rect x="203" y="85" width="163" height="75" rx="10" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="218" y="105" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">Avg. Length of Stay</text>
+  <text x="218" y="130" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#2dd4bf">4.2d</text>
+  <text x="218" y="148" font-family="monospace" font-size="9" fill="#10b981">↓ 0.3d</text>
+  <polyline points="288,145 298,143 308,140 318,138 328,135 338,137 348,132 355,129" stroke="#2dd4bf" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Card 3: Staff Ratio -->
+  <rect x="376" y="85" width="163" height="75" rx="10" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="391" y="105" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">Staff : Patient</text>
+  <text x="391" y="130" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#60a5fa">1:4.8</text>
+  <text x="391" y="148" font-family="monospace" font-size="9" fill="#f87171">↑ 0.2</text>
+  <polyline points="462,145 472,142 482,144 492,141 502,138 512,140 522,136 528,134" stroke="#60a5fa" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Card 4: Admissions -->
+  <rect x="549" y="85" width="221" height="75" rx="10" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="564" y="105" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">Monthly Admissions</text>
+  <text x="564" y="130" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#a78bfa">2,847</text>
+  <text x="564" y="148" font-family="monospace" font-size="9" fill="#10b981">↑ 8.1%</text>
+  <polyline points="650,145 662,143 674,140 686,136 698,138 710,132 722,128 734,124 746,120 755,116" stroke="#a78bfa" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Main bar chart -->
+  <rect x="30" y="175" width="460" height="270" rx="12" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="46" y="197" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#e0f2fe">Admissions by Department</text>
+
+  <!-- Chart area -->
+  <!-- Y axis labels -->
+  <g font-family="monospace" font-size="8" fill="#4b5563">
+    <text x="38" y="395">0</text>
+    <text x="38" y="365">100</text>
+    <text x="38" y="335">200</text>
+    <text x="38" y="305">300</text>
+    <text x="38" y="275">400</text>
+    <text x="38" y="245">500</text>
+    <text x="38" y="215">600</text>
+  </g>
+  <!-- Y axis lines -->
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.6">
+    <line x1="60" y1="395" x2="470" y2="395"/>
+    <line x1="60" y1="365" x2="470" y2="365"/>
+    <line x1="60" y1="335" x2="470" y2="335"/>
+    <line x1="60" y1="305" x2="470" y2="305"/>
+    <line x1="60" y1="275" x2="470" y2="275"/>
+    <line x1="60" y1="245" x2="470" y2="245"/>
+    <line x1="60" y1="215" x2="470" y2="215"/>
+  </g>
+
+  <!-- Bars: Cardiology, Orthopedics, Neurology, Pediatrics, Oncology -->
+  <!-- Cardiology (bar height ~160px = 530 admissions) -->
+  <rect x="78" y="235" width="52" height="160" rx="4" fill="url(#h-bar1)" filter="url(#h-glow)"/>
+  <text x="104" y="228" text-anchor="middle" font-family="monospace" font-size="8" fill="#38bdf8">530</text>
+
+  <!-- Orthopedics (bar height ~130px = 430) -->
+  <rect x="160" y="265" width="52" height="130" rx="4" fill="url(#h-bar2)" filter="url(#h-glow)"/>
+  <text x="186" y="258" text-anchor="middle" font-family="monospace" font-size="8" fill="#2dd4bf">430</text>
+
+  <!-- Neurology (bar height ~100px = 330) -->
+  <rect x="242" y="295" width="52" height="100" rx="4" fill="url(#h-bar3)" filter="url(#h-glow)"/>
+  <text x="268" y="288" text-anchor="middle" font-family="monospace" font-size="8" fill="#60a5fa">330</text>
+
+  <!-- Pediatrics (bar height ~145px = 480) -->
+  <rect x="324" y="250" width="52" height="145" rx="4" fill="url(#h-bar4)" filter="url(#h-glow)"/>
+  <text x="350" y="243" text-anchor="middle" font-family="monospace" font-size="8" fill="#a78bfa">480</text>
+
+  <!-- Oncology (bar height ~80px = 260) -->
+  <rect x="406" y="315" width="52" height="80" rx="4" fill="url(#h-bar5)" filter="url(#h-glow)"/>
+  <text x="432" y="308" text-anchor="middle" font-family="monospace" font-size="8" fill="#fb923c">260</text>
+
+  <!-- X axis labels -->
+  <g font-family="system-ui,sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">
+    <text x="104" y="410">Cardiology</text>
+    <text x="186" y="410">Ortho</text>
+    <text x="268" y="410">Neuro</text>
+    <text x="350" y="410">Pediatrics</text>
+    <text x="432" y="410">Oncology</text>
+  </g>
+
+  <!-- Right panels column -->
+  <!-- Donut chart panel -->
+  <rect x="505" y="175" width="265" height="165" rx="12" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="520" y="197" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#e0f2fe">Bed Occupancy by Ward</text>
+  <!-- Donut -->
+  <circle cx="580" cy="272" r="48" fill="none" stroke="#1e3a5f" stroke-width="16"/>
+  <circle cx="580" cy="272" r="48" fill="none" stroke="#38bdf8" stroke-width="16" stroke-dasharray="170 131" stroke-dashoffset="0" opacity="0.9"/>
+  <circle cx="580" cy="272" r="48" fill="none" stroke="#2dd4bf" stroke-width="16" stroke-dasharray="60 241" stroke-dashoffset="-170" opacity="0.9"/>
+  <circle cx="580" cy="272" r="48" fill="none" stroke="#60a5fa" stroke-width="16" stroke-dasharray="40 261" stroke-dashoffset="-230" opacity="0.9"/>
+  <circle cx="580" cy="272" r="48" fill="none" stroke="#a78bfa" stroke-width="16" stroke-dasharray="31 270" stroke-dashoffset="-270" opacity="0.9"/>
+  <!-- Donut center text -->
+  <text x="580" y="268" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#e0f2fe">84%</text>
+  <text x="580" y="282" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b7280">occupied</text>
+  <!-- Legend -->
+  <g font-family="system-ui,sans-serif" font-size="8">
+    <rect x="640" y="215" width="8" height="8" rx="2" fill="#38bdf8"/>
+    <text x="652" y="223" fill="#94a3b8">ICU (54%)</text>
+    <rect x="640" y="231" width="8" height="8" rx="2" fill="#2dd4bf"/>
+    <text x="652" y="239" fill="#94a3b8">General (19%)</text>
+    <rect x="640" y="247" width="8" height="8" rx="2" fill="#60a5fa"/>
+    <text x="652" y="255" fill="#94a3b8">Surgical (13%)</text>
+    <rect x="640" y="263" width="8" height="8" rx="2" fill="#a78bfa"/>
+    <text x="652" y="271" fill="#94a3b8">Pediatric (10%)</text>
+    <rect x="640" y="279" width="8" height="8" rx="2" fill="#1e3a5f"/>
+    <text x="652" y="287" fill="#94a3b8">Other (4%)</text>
+  </g>
+
+  <!-- Trend line panel -->
+  <rect x="505" y="350" width="265" height="95" rx="12" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="520" y="370" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#e0f2fe">Weekly Admission Trend</text>
+  <!-- Line chart -->
+  <polyline
+    points="520,430 546,425 572,418 598,422 624,410 650,403 676,395 700,388 726,380 752,372"
+    stroke="url(#h-line)" stroke-width="2" fill="none"/>
+  <polyline
+    points="520,430 546,425 572,418 598,422 624,410 650,403 676,395 700,388 726,380 752,372"
+    stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <!-- Data points -->
+  <g fill="#38bdf8">
+    <circle cx="520" cy="430" r="3"/>
+    <circle cx="546" cy="425" r="3"/>
+    <circle cx="572" cy="418" r="3"/>
+    <circle cx="598" cy="422" r="3"/>
+    <circle cx="624" cy="410" r="3"/>
+    <circle cx="650" cy="403" r="3"/>
+    <circle cx="676" cy="395" r="3"/>
+    <circle cx="700" cy="388" r="3"/>
+    <circle cx="726" cy="380" r="3"/>
+    <circle cx="752" cy="372" r="3" filter="url(#h-glow)"/>
+  </g>
+  <g font-family="monospace" font-size="7" fill="#4b5563" text-anchor="middle">
+    <text x="520" y="442">W1</text>
+    <text x="572" y="442">W3</text>
+    <text x="624" y="442">W5</text>
+    <text x="676" y="442">W7</text>
+    <text x="728" y="442">W9</text>
+  </g>
+
+  <!-- Tech tags bottom -->
+  <rect x="30" y="458" width="60" height="20" rx="10" fill="#0c1a2e" stroke="#38bdf8" stroke-width="1"/>
+  <text x="60" y="472" text-anchor="middle" font-family="monospace" font-size="9" fill="#7dd3fc">Power BI</text>
+  <rect x="98" y="458" width="44" height="20" rx="10" fill="#0c1a2e" stroke="#2dd4bf" stroke-width="1"/>
+  <text x="120" y="472" text-anchor="middle" font-family="monospace" font-size="9" fill="#5eead4">Excel</text>
+  <rect x="150" y="458" width="38" height="20" rx="10" fill="#0c1a2e" stroke="#60a5fa" stroke-width="1"/>
+  <text x="169" y="472" text-anchor="middle" font-family="monospace" font-size="9" fill="#93c5fd">DAX</text>
+</svg>

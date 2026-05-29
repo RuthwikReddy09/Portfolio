@@ -1,0 +1,304 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gs-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="gs-panel-left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b27"/>
+    </linearGradient>
+    <linearGradient id="gs-panel-right" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a1f0a"/>
+      <stop offset="100%" stop-color="#0d2b0d"/>
+    </linearGradient>
+    <linearGradient id="gs-ai-orb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="gs-beam-l" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="gs-beam-r" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="gs-glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="gs-softglow">
+      <feGaussianBlur stdDeviation="22" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="gs-arr-r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f97316" opacity="0.9"/>
+    </marker>
+    <marker id="gs-arr-g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#10b981" opacity="0.9"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#gs-bg)"/>
+
+  <!-- Dot pattern -->
+  <g opacity="0.12">
+    <circle cx="40" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="80" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="120" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="160" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="200" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="240" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="280" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="320" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="360" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="400" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="440" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="480" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="520" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="560" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="600" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="640" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="680" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="720" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="760" cy="40" r="1" fill="#4b5563"/>
+    <circle cx="40" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="80" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="120" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="160" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="200" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="240" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="280" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="320" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="360" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="400" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="440" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="480" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="520" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="560" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="600" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="640" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="680" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="720" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="760" cy="80" r="1" fill="#4b5563"/>
+    <circle cx="40" cy="120" r="1" fill="#4b5563"/>
+    <circle cx="80" cy="120" r="1" fill="#4b5563"/>
+    <circle cx="120" cy="120" r="1" fill="#4b5563"/>
+    <circle cx="160" cy="120" r="1" fill="#4b5563"/>
+    <circle cx="200" cy="120" r="1" fill="#4b5563"/>
+    <circle cx="40" cy="160" r="1" fill="#4b5563"/>
+    <circle cx="80" cy="160" r="1" fill="#4b5563"/>
+    <circle cx="40" cy="200" r="1" fill="#4b5563"/>
+    <circle cx="720" cy="120" r="1" fill="#4b5563"/>
+    <circle cx="760" cy="120" r="1" fill="#4b5563"/>
+    <circle cx="720" cy="160" r="1" fill="#4b5563"/>
+    <circle cx="760" cy="160" r="1" fill="#4b5563"/>
+    <circle cx="720" cy="200" r="1" fill="#4b5563"/>
+    <circle cx="760" cy="200" r="1" fill="#4b5563"/>
+    <circle cx="40" cy="440" r="1" fill="#4b5563"/>
+    <circle cx="80" cy="440" r="1" fill="#4b5563"/>
+    <circle cx="40" cy="460" r="1" fill="#4b5563"/>
+    <circle cx="720" cy="440" r="1" fill="#4b5563"/>
+    <circle cx="760" cy="440" r="1" fill="#4b5563"/>
+    <circle cx="720" cy="460" r="1" fill="#4b5563"/>
+  </g>
+
+  <!-- Ambient glow on AI orb -->
+  <circle cx="400" cy="250" r="80" fill="#3b82f6" opacity="0.06" filter="url(#gs-softglow)"/>
+
+  <!-- Left panel: Code Editor -->
+  <rect x="30" y="90" width="230" height="320" rx="12" fill="url(#gs-panel-left)" stroke="#30363d" stroke-width="1.5"/>
+  <!-- Editor header bar -->
+  <rect x="30" y="90" width="230" height="30" rx="12" fill="#161b27"/>
+  <rect x="30" y="108" width="230" height="12" fill="#161b27"/>
+  <!-- Traffic lights -->
+  <circle cx="50" cy="105" r="5" fill="#ff5f57"/>
+  <circle cx="64" cy="105" r="5" fill="#ffbd2e"/>
+  <circle cx="78" cy="105" r="5" fill="#28c840"/>
+  <!-- File tab -->
+  <rect x="94" y="97" width="80" height="16" rx="4" fill="#1f2937"/>
+  <text x="134" y="109" text-anchor="middle" font-family="monospace" font-size="8" fill="#9ca3af">main.py</text>
+
+  <!-- Code lines -->
+  <g font-family="monospace" font-size="9">
+    <!-- Line 1 -->
+    <text x="46" y="143" fill="#c586c0">import</text>
+    <text x="88" y="143" fill="#9cdcfe"> torch</text>
+    <text x="118" y="143" fill="#cccccc">, </text>
+    <text x="124" y="143" fill="#9cdcfe">langchain</text>
+    <!-- Line 2 -->
+    <text x="46" y="158" fill="#c586c0">from</text>
+    <text x="72" y="158" fill="#9cdcfe"> agents </text>
+    <text x="116" y="158" fill="#c586c0">import</text>
+    <text x="158" y="158" fill="#4ec9b0"> *</text>
+    <!-- Line 3 blank -->
+    <!-- Line 4 -->
+    <text x="46" y="173" fill="#dcdcaa">class</text>
+    <text x="74" y="173" fill="#4ec9b0"> Observer</text>
+    <text x="128" y="173" fill="#cccccc">:</text>
+    <!-- Line 5 -->
+    <text x="56" y="188" fill="#c586c0">  def</text>
+    <text x="78" y="188" fill="#dcdcaa"> monitor</text>
+    <text x="122" y="188" fill="#cccccc">(self, run):</text>
+    <!-- Line 6 -->
+    <text x="66" y="203" fill="#6a9955">    # detect anomaly</text>
+    <!-- Line 7 -->
+    <text x="66" y="218" fill="#9cdcfe">    metrics</text>
+    <text x="119" y="218" fill="#cccccc"> = </text>
+    <text x="132" y="218" fill="#dcdcaa">log</text>
+    <text x="148" y="218" fill="#cccccc">(run)</text>
+    <!-- Line 8 -->
+    <text x="66" y="233" fill="#c586c0">    if</text>
+    <text x="86" y="233" fill="#9cdcfe"> nan</text>
+    <text x="107" y="233" fill="#cccccc">(metrics):</text>
+    <!-- Line 9 -->
+    <text x="76" y="248" fill="#dcdcaa">      alert</text>
+    <text x="117" y="248" fill="#cccccc">(</text>
+    <text x="120" y="248" fill="#ce9178">"NaN"</text>
+    <text x="145" y="248" fill="#cccccc">)</text>
+    <!-- Line 10 blank -->
+    <!-- Line 11 -->
+    <text x="46" y="263" fill="#dcdcaa">class</text>
+    <text x="74" y="263" fill="#4ec9b0"> Planner</text>
+    <text x="120" y="263" fill="#cccccc">:</text>
+    <!-- Line 12 -->
+    <text x="56" y="278" fill="#c586c0">  def</text>
+    <text x="78" y="278" fill="#dcdcaa"> optimize</text>
+    <text x="126" y="278" fill="#cccccc">(self):</text>
+    <!-- Line 13 -->
+    <text x="66" y="293" fill="#9cdcfe">    params</text>
+    <text x="111" y="293" fill="#cccccc"> = </text>
+    <text x="124" y="293" fill="#dcdcaa">tune</text>
+    <text x="146" y="293" fill="#cccccc">()</text>
+    <!-- Line 14 -->
+    <text x="66" y="308" fill="#c586c0">    return</text>
+    <text x="106" y="308" fill="#9cdcfe"> params</text>
+    <!-- Cursor blink -->
+    <rect x="46" y="322" width="6" height="10" fill="#aeafad" opacity="0.8" rx="1"/>
+  </g>
+
+  <!-- Line numbers -->
+  <g font-family="monospace" font-size="8" fill="#3d444d">
+    <text x="36" y="143">1</text>
+    <text x="36" y="158">2</text>
+    <text x="36" y="173">3</text>
+    <text x="36" y="188">4</text>
+    <text x="36" y="203">5</text>
+    <text x="36" y="218">6</text>
+    <text x="36" y="233">7</text>
+    <text x="36" y="248">8</text>
+    <text x="36" y="263">9</text>
+    <text x="32" y="278">10</text>
+    <text x="32" y="293">11</text>
+    <text x="32" y="308">12</text>
+  </g>
+
+  <!-- GitHub logo above left panel -->
+  <circle cx="145" cy="68" r="16" fill="#24292e"/>
+  <path d="M145,56 C138.37,56 133,61.37 133,68 C133,73.3 136.44,77.8 141.22,79.38 C141.82,79.49 142.04,79.12 142.04,78.8 C142.04,78.51 142.03,77.71 142.03,76.66 C139,77.34 138.2,75.32 138.2,75.32 C137.66,73.93 136.87,73.56 136.87,73.56 C135.78,72.79 136.95,72.8 136.95,72.8 C138.16,72.88 138.8,74.04 138.8,74.04 C139.87,75.88 141.63,75.35 142.08,75.05 C142.19,74.25 142.52,73.72 142.88,73.42 C140.42,73.11 137.82,72.16 137.82,67.9 C137.82,66.58 138.29,65.5 138.82,64.66 C138.7,64.36 138.28,63.12 138.94,61.44 C138.94,61.44 139.95,61.12 142.03,62.73 C142.88,62.49 143.8,62.37 144.72,62.37 C145.64,62.37 146.56,62.49 147.41,62.73 C149.49,61.12 150.5,61.44 150.5,61.44 C151.16,63.12 150.74,64.36 150.62,64.66 C151.15,65.5 151.62,66.58 151.62,67.9 C151.62,72.17 149.02,73.1 146.55,73.41 C147,73.8 147.4,74.56 147.4,75.72 C147.4,77.4 147.38,78.74 147.38,78.8 C147.38,79.12 147.6,79.5 148.2,79.38 C152.97,77.79 156.4,73.3 156.4,68 C156.4,61.37 151.03,56 145,56Z" fill="white" opacity="0.9"/>
+  <text x="145" y="73" text-anchor="middle" font-family="system-ui" font-size="8" fill="white" opacity="0">gh</text>
+
+  <!-- PR badge -->
+  <rect x="100" y="380" width="90" height="22" rx="11" fill="#1f2937" stroke="#f97316" stroke-width="1"/>
+  <text x="145" y="395" text-anchor="middle" font-family="monospace" font-size="9" fill="#f97316">PR #42 merged</text>
+
+  <!-- Beam left → center -->
+  <rect x="262" y="244" width="98" height="12" rx="6" fill="url(#gs-beam-l)" opacity="0.6"/>
+  <line x1="262" y1="250" x2="355" y2="250" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.9" marker-end="url(#gs-arr-r)"/>
+
+  <!-- Beam center → right -->
+  <rect x="442" y="244" width="98" height="12" rx="6" fill="url(#gs-beam-r)" opacity="0.6"/>
+  <line x1="445" y1="250" x2="538" y2="250" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.9" marker-end="url(#gs-arr-g)"/>
+
+  <!-- AI Orb center -->
+  <circle cx="400" cy="250" r="58" fill="#0f172a" stroke="#3b82f6" stroke-width="2" filter="url(#gs-glow)"/>
+  <circle cx="400" cy="250" r="58" fill="url(#gs-ai-orb)" opacity="0.18"/>
+  <!-- Spinning ring -->
+  <circle cx="400" cy="250" r="66" fill="none" stroke="#6366f1" stroke-width="1" stroke-dasharray="5,10" opacity="0.4"/>
+  <!-- LLM label -->
+  <text x="400" y="238" text-anchor="middle" font-family="monospace" font-size="10" fill="#93c5fd" font-weight="700">LLM</text>
+  <text x="400" y="252" text-anchor="middle" font-family="monospace" font-size="10" fill="#93c5fd" font-weight="700">Agent</text>
+  <!-- Pulse dots on orb -->
+  <circle cx="400" cy="195" r="3" fill="#60a5fa" opacity="0.8"/>
+  <circle cx="400" cy="305" r="3" fill="#60a5fa" opacity="0.8"/>
+  <circle cx="345" cy="250" r="3" fill="#60a5fa" opacity="0.7"/>
+  <circle cx="455" cy="250" r="3" fill="#60a5fa" opacity="0.7"/>
+  <!-- Text: 40s -->
+  <text x="400" y="275" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b7280">⚡ 40s</text>
+
+  <!-- Right panel: Documentation -->
+  <rect x="540" y="90" width="230" height="320" rx="12" fill="url(#gs-panel-right)" stroke="#1f3a1f" stroke-width="1.5"/>
+  <!-- Doc header -->
+  <rect x="540" y="90" width="230" height="30" rx="12" fill="#0a1f0a"/>
+  <rect x="540" y="108" width="230" height="12" fill="#0a1f0a"/>
+  <!-- Doc icon -->
+  <rect x="554" y="96" width="14" height="18" rx="2" fill="#374151" stroke="#10b981" stroke-width="1"/>
+  <line x1="557" y1="101" x2="565" y2="101" stroke="#10b981" stroke-width="1"/>
+  <line x1="557" y1="104" x2="565" y2="104" stroke="#10b981" stroke-width="1"/>
+  <line x1="557" y1="107" x2="562" y2="107" stroke="#10b981" stroke-width="1"/>
+  <text x="576" y="109" font-family="monospace" font-size="8" fill="#6b7280">README.md</text>
+
+  <!-- Markdown content -->
+  <g font-family="monospace" font-size="9">
+    <!-- H1 -->
+    <text x="556" y="143" fill="#10b981" font-size="11" font-weight="700"># AutoExperiment</text>
+    <line x1="556" y1="147" x2="752" y2="147" stroke="#1f3a1f" stroke-width="1"/>
+    <!-- H2 -->
+    <text x="556" y="163" fill="#34d399" font-size="10">## Overview</text>
+    <!-- Body text lines -->
+    <rect x="556" y="170" width="180" height="6" rx="3" fill="#1f3a1f"/>
+    <rect x="556" y="180" width="160" height="6" rx="3" fill="#1f3a1f"/>
+    <rect x="556" y="190" width="140" height="6" rx="3" fill="#1f3a1f"/>
+    <!-- H2 -->
+    <text x="556" y="210" fill="#34d399" font-size="10">## Installation</text>
+    <!-- Code block -->
+    <rect x="556" y="216" width="195" height="28" rx="4" fill="#0d1117" stroke="#1f3a1f" stroke-width="1"/>
+    <text x="562" y="228" fill="#f97316" font-size="8">$</text>
+    <text x="572" y="228" fill="#d1d5db" font-size="8">pip install autoexperiment</text>
+    <text x="562" y="240" fill="#f97316" font-size="8">$</text>
+    <text x="572" y="240" fill="#d1d5db" font-size="8">python run_agent.py</text>
+    <!-- H2 -->
+    <text x="556" y="260" fill="#34d399" font-size="10">## Features</text>
+    <!-- Checkmarks -->
+    <text x="556" y="276" fill="#10b981" font-size="9">✓</text>
+    <rect x="570" y="270" width="130" height="6" rx="3" fill="#1f3a1f"/>
+    <text x="556" y="291" fill="#10b981" font-size="9">✓</text>
+    <rect x="570" y="285" width="110" height="6" rx="3" fill="#1f3a1f"/>
+    <text x="556" y="306" fill="#10b981" font-size="9">✓</text>
+    <rect x="570" y="300" width="150" height="6" rx="3" fill="#1f3a1f"/>
+    <!-- H2 -->
+    <text x="556" y="326" fill="#34d399" font-size="10">## Results</text>
+    <rect x="556" y="332" width="170" height="6" rx="3" fill="#1f3a1f"/>
+    <rect x="556" y="342" width="120" height="6" rx="3" fill="#1f3a1f"/>
+    <!-- Badge -->
+    <rect x="556" y="356" width="60" height="16" rx="8" fill="#14532d" stroke="#10b981" stroke-width="1"/>
+    <text x="586" y="368" text-anchor="middle" font-family="monospace" font-size="8" fill="#4ade80">−60% effort</text>
+    <rect x="622" y="356" width="56" height="16" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+    <text x="650" y="368" text-anchor="middle" font-family="monospace" font-size="8" fill="#60a5fa">NeurIPS '25</text>
+  </g>
+
+  <!-- GitHub Actions badge on right panel -->
+  <rect x="586" y="395" width="130" height="22" rx="11" fill="#0a1f0a" stroke="#10b981" stroke-width="1"/>
+  <text x="651" y="410" text-anchor="middle" font-family="monospace" font-size="9" fill="#34d399">✓ Actions: passing</text>
+
+  <!-- Title -->
+  <text x="30" y="38" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#f0f9ff">GitScribe</text>
+  <text x="30" y="56" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">AI-Powered Documentation Agent</text>
+
+  <!-- Bottom labels -->
+  <text x="145" y="428" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#9ca3af">GitHub Repo</text>
+  <text x="400" y="328" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280">LLM Pipeline</text>
+  <text x="655" y="428" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#9ca3af">Auto Docs</text>
+
+  <!-- Tech tags bottom -->
+  <rect x="30" y="448" width="60" height="20" rx="10" fill="#111827" stroke="#f97316" stroke-width="1"/>
+  <text x="60" y="462" text-anchor="middle" font-family="monospace" font-size="9" fill="#fdba74">FastAPI</text>
+  <rect x="98" y="448" width="80" height="20" rx="10" fill="#111827" stroke="#10b981" stroke-width="1"/>
+  <text x="138" y="462" text-anchor="middle" font-family="monospace" font-size="9" fill="#6ee7b7">GitHub API</text>
+  <rect x="186" y="448" width="72" height="20" rx="10" fill="#111827" stroke="#3b82f6" stroke-width="1"/>
+  <text x="222" y="462" text-anchor="middle" font-family="monospace" font-size="9" fill="#93c5fd">LangChain</text>
+  <rect x="266" y="448" width="56" height="20" rx="10" fill="#111827" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="294" y="462" text-anchor="middle" font-family="monospace" font-size="9" fill="#c4b5fd">Python</text>
+</svg>

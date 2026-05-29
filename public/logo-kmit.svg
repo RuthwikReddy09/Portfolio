@@ -1,0 +1,34 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="kmit-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="kmit-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circle background -->
+  <circle cx="60" cy="60" r="56" fill="url(#kmit-bg)"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#fbbf24" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Building / pillars motif -->
+  <!-- Roof triangle -->
+  <polygon points="28,58 60,34 92,58" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <!-- Pillars -->
+  <rect x="34" y="58" width="6" height="22" fill="#fbbf24" rx="1"/>
+  <rect x="47" y="58" width="6" height="22" fill="#fbbf24" rx="1"/>
+  <rect x="60" y="58" width="6" height="22" fill="#fbbf24" rx="1"/>
+  <rect x="73" y="58" width="6" height="22" fill="#fbbf24" rx="1"/>
+  <!-- Base -->
+  <rect x="28" y="79" width="64" height="4" fill="#fbbf24" rx="1"/>
+
+  <!-- "KMIT" text -->
+  <text x="60" y="100" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="700" fill="#fbbf24" letter-spacing="3">KMIT</text>
+
+  <!-- Top arch text -->
+  <text x="60" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#fca5a5" letter-spacing="1" opacity="0.9">KESHAV MEMORIAL</text>
+</svg>
